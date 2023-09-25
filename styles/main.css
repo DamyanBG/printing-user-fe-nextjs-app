@@ -1,0 +1,65 @@
+.main-section {
+    text-align: center;
+}
+
+.main-section article {
+    padding: 36px 24px;
+    background-color: gray;
+}
+
+.main-section img {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.the-heading {
+    font-size: 32px;
+}
+
+main {
+    min-height: 80vh;
+}
+
+.sample-section {
+    text-align: center;
+    background-color: gray;
+    padding: 32px;
+}
+
+.sample-section h1 {
+    padding: 12px;
+}
+
+.sample-section article {
+    border: darkgray solid 2px;
+    width: 32vw;
+    margin: 32px auto;
+    padding: 12px;
+    background-color: lightgray;
+    box-shadow: 10px 10px 10px 10px rgb(24, 22, 22);
+}
+
+.quoting {
+    text-align: center;
+    background-color: gray;
+    min-height: 80vw;
+    padding: 24px 32px;
+}
+
+.quoting h1 {
+    font-size: 40px;
+}
+
+.quoting form {
+    margin: 12px auto;
+    border: 1px rgb(112, 180, 202) solid;
+    width: 33vw;
+    padding: 20px;
+    background-color: rgb(187, 206, 212);
+    box-shadow: 10px 10px 10px 10px lightgray;
+}
+
+.quoting form article {
+    margin: 12px auto;
+}
