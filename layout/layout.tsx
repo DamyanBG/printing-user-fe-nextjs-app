@@ -8,13 +8,12 @@ function Layout(props: LayoutProps) {
     return (
         <>
             <header className={classes.header}>
-                <Link href="/" aria-label="home page link">
+                <Link href="/" aria-label="banner">
                     <div
                         style={{
                             display: "flex",
                             alignItems: "center",
                         }}
-                        role="banner"
                     >
                         <Image
                             src="/images/3d-print-w.png"
@@ -25,12 +24,12 @@ function Layout(props: LayoutProps) {
                         <h1>3D PRINTING WORKSHOP</h1>
                     </div>
                 </Link>
-                <input aria-label="toggle navigation menu" id="menu-toggle" type="checkbox" role="button" />
+                <input aria-label="toggle navigation menu" id="menu-toggle" type="checkbox" />
                 <label className="menu-button-container" htmlFor="menu-toggle">
                     <div className="menu-button"></div>
                 </label>
 
-                <ul className="menu" role="navigation" aria-label="main navigation">
+                <ul className="menu" aria-label="main navigation">
                     <li>
                         <Link href="/samples" aria-label="sample products link">Примерни продукти</Link>
                     </li>
