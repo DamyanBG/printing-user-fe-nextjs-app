@@ -11,14 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className='main-section'>
-        <article>
-          <Image
-            src='/images/shield-cell.jpg'
-            alt='Prop image'
-            width={300}
-            height={300}
-          />
-        </article>
+        <section className='first-main'>
+          <h1>Услуги с 3Д принтер!</h1>
+        </section>
         <article>
           <h1 className='the-heading'>Услуги с 3D принтер</h1>
         </article>
