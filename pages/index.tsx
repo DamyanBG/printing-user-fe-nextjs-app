@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <section className='main-section'>
         <section className='first-main'>
-          <h1>Услуги с 3Д принтер!</h1>
+          <h1 aria-label='main page header'>Услуги с 3Д принтер!</h1>
         </section>
         <article>
           <h1 className='the-heading'>Услуги с 3D принтер</h1>

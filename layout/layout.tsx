@@ -8,12 +8,13 @@ function Layout(props: LayoutProps) {
     return (
         <>
             <header className={classes.header}>
-                <Link href="/">
+                <Link href="/" aria-label="home page link">
                     <div
                         style={{
                             display: "flex",
-                            alignItems: "center"
+                            alignItems: "center",
                         }}
+                        role="banner"
                     >
                         <Image
                             src="/images/3d-print-w.png"
@@ -24,23 +25,22 @@ function Layout(props: LayoutProps) {
                         <h1>3D PRINTING WORKSHOP</h1>
                     </div>
                 </Link>
-                <input id="menu-toggle" type="checkbox" />
+                <input aria-label="toggle navigation menu" id="menu-toggle" type="checkbox" role="button" />
                 <label className="menu-button-container" htmlFor="menu-toggle">
                     <div className="menu-button"></div>
                 </label>
-                
-                    <ul className="menu">
-                        <li>
-                            <Link href="/samples">Примерни продукти</Link>
-                        </li>
-                        <li>
-                            <Link href="/quoting">Направи запитване</Link>
-                        </li>
-                        <li>
-                            <Link href="/contact">Контакт</Link>
-                        </li>
-                    </ul>
-                
+
+                <ul className="menu" role="navigation" aria-label="main navigation">
+                    <li>
+                        <Link href="/samples" aria-label="sample products link">Примерни продукти</Link>
+                    </li>
+                    <li>
+                        <Link href="/quoting" aria-label="create quote link">Направи запитване</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact" aria-label="contact page link">Контакт</Link>
+                    </li>
+                </ul>
             </header>
             <main>{props.children}</main>
         </>
